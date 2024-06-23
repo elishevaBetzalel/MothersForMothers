@@ -1,0 +1,44 @@
+<!-- דף סיום קניה -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <title>סיום קניה</title>
+  </head>
+  <body class="c">
+    <a href="../html/homePage.html"> חזרה לדף הבית </a>
+    <form action="../html/finish.html" style="width: 50%; border: 3px double;align-self: center;margin-top: 150px;margin-bottom: 20px;align-content: center;"dir="rtl" >
+    <legend> תשלום</legend>
+    <label>כתובת מייל</label>
+    <br>
+    <input id="cMail" required>
+    <br>
+    <br>
+    <label>מספר כרטיס</label>
+    <br>
+    <input id="cNumber" autocomplete="cNumber" inputmode="numeric" pattern="[\d ]{10,30}" required>
+    <br>
+    <br>
+    <label>שם בעל הכרטיס</label>
+    <br>
+    <input id="cName" autocomplete="cName" pattern="[\p{L} \-\.]+" required>
+    <br>
+    <br>
+    <label>תוקף הכרטיס</label>
+    <br>
+    <input id="cExp" class="c" autocomplete="cExp" placeholder="MMYY" pattern="[\d ]{4,4}" required>
+    <br>
+    <br>
+    <label>הספרות שבגב הכרטיס</label>
+    <br>
+    <input id="cCsc" autocomplete="cCsc" inputmode="numeric" placeholder="cvv" pattern="[\d ]{3,4}" required>
+    <br>
+    <br>
+    <input type="submit" id="pay" value="אישור ותשלום"> 
+    </form>
+    <script src="../js/all.js"></script>
+  </body>
+</html>

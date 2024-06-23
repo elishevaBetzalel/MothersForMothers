@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרסומות לדף בית</title>
+    <style>
+        .slideshow-container {
+          position: relative;
+          width: 70%;
+          height: 600px;
+          margin: 0 auto;
+        }
+        .slideshow-image {
+          display: none;
+          width: 60%;
+          height: 100%;
+        }
+    </style>
+</head>
+<body>
+      <body>
+        <div class="slideshow-container">
+          <img class="slideshow-image" src="../תמונות/מודעה.jpg" alt="Image 1">
+          <img class="slideshow-image" src="../תמונות/אמהות-למען-אמהות.jpg" alt="Image 2">
+          <img class="slideshow-image" src="../תמונות/שבוע מוזיקה.jpg" alt="Image 3">
+        </div>
+      
+        <script>
+          const images = document.querySelectorAll('.slideshow-image');
+          let currentIndex = 0;
+          function showImage(index) {
+            images.forEach((image) => {
+              image.style.display = 'none';
+            });
+      
+            images[index].style.display = 'block';
+          }
+      
+          function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+          }
+          setInterval(nextImage, 5000); // Change image every 5 seconds
+        </script>
+</body>
+</html>

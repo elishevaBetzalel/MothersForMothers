@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <title> nav </title> 
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../תמונות/יפו פעמיך.jpg">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>למען אמהות</title>
+   </head>
+   
+   <!-- דף הבית -->
+<body>
+
+  <!-- החלק העליון של דף הבית -->
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a id="">אמהות למען אמהות <a style="font-size: small;">כי את חלק מכולנו</a></a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">קו למען אמהות</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <!-- קישור לדף הבית -->
+          <li><a id="home" href="../html/homePage.html">דף הבית</a></li>
+          <li>
+            <a id="">ספרי המרצים</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+
+              <li><a id="נויגרשל">הרב נויגרשל</a></li>
+              <li><a id="בידרמן">הרב בידרמן</a></li>
+              <li><a id="ויא">הרב ויא</a></li>
+              <li><a id="רוזנבלום">הרב ברוך רוזנבלום</a></li>
+              <li><a id=" פינקוס">הרב פינקוס</a></li>
+              <li class="more">
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                <span><a id="">הרב לווינשטיין</a>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a id="התורה">על התורה</a></li>
+                    <li><a id=" מועדים">מועדים</a></li>
+                    <li><a id=" גדולי">גדולי הדורות</a></li>
+                  </ul>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a>הרצאות</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a id="">הבית היהודי</a></li>
+              <li><a id="">במעגל השנה</a></li>
+              <li><a id="">חינוך</a></li>
+              <li><a id="">מוסר</a></li>
+              <li><a id="">תכניות מוזיקליות</a></li>
+            </ul>
+          </li>
+          <li><a>אודות</a></li>
+          <li><a href="../html/personal.html" id="עיצוב אישי">עיצוב אישי</a></li>
+          <li><a href="../html/shoppingBasket!!!!.html" id="myProducts">סל הקניות שלי &#128722;</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="לחיפוש...">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- רקע דף הבית -->
+  <main id="closeHomePage">
+    <div class="text" dir="rtl">
+        <h2>ברוכה הבאה לקו שלך, הקו של כולנו</h2>
+        <h3>הקו, בברכתם של גדולי ישראל<br>מתמלא בכל יום בתוכן עדכני ועשיר<br>מרגישה לפעמים שמרב עומס אין לך זמן לנשמה שלך?<br>
+            נרדמת מול כל ספר שפותחת? <br> לא מוצאת זמן לעצמך? <br> בין כל מטלות הבית, העבודה, הנסיעות, כביסות, גיהוצים, בישולים, קניות....<br>
+              </h3>
+    </div>
+
+    <div class="img">
+        <img src="../תמונות/מצגת1.jpg" opacity="0.9" width="550px" height="450px">
+        <img src="../תמונות/שבת.jpg" opacity="0.9" width="550px" height="450px">
+    </div>
+ <!--  תמונות מתחלפות -->
+    <iframe src="sliding.html" class="sliding" frameborder="0" scrolling="no"></iframe>
+</main>
+
+    <!-- החלק התחתון של דף הבית -->
+    <div class="footer" id="closeFooter">
+      <iframe src="footer.html" class="footer" frameborder="0" scrolling="auto" ></iframe>
+  </div> 
+
+  <!-- popup - פרטים נוספים על המוצר -->
+  <div id="myPopup" class="popup"></div>
+
+  <script src="../js/all.js"></script>
+  <script src="../js/db.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/product.js"></script>
+
+</body>
+</html>
